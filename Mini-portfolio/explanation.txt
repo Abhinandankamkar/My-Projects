@@ -1,0 +1,25 @@
+User types city
+
+getWeather() called
+
+API starts working
+
+fetch() → Request to Server
+
+Server (OpenWeather API)
+
+JSON Response Returned
+
+Extract Data
+
+Update HTML (weatherInfo)
+
+
+
+
+---------------------------------------------------
+
+User → writes wrong sentence
+Flask → teacher
+SpellChecker → dictionary
+Output → corrected notebook

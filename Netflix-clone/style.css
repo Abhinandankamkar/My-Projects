@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+.main-container{
+    border: none;
+    background-color: black;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0px 100px;
+
+}
+
+.logo{
+    margin-left: 50px;
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
+}   
+
+.sign{
+    margin-right: 50px;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 600px;
+}
+
+.one{
+    font-weight: bolder;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+
+.two{
+    color: white;
+    font-size: smaller;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.three{
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.email-address{
+    display: flex;
+    gap: 10px;
+}
+.email-address input{
+    background-color: black;
+    border: 1px rgba(173, 173, 173, 0.664) solid;
+    padding: 15px 20px;
+    width: 300px;
+    color: white;
+    border-radius: 5px;
+    outline: white;
+}
+
+.get-started{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.home{
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    z-index: 1;
+
+    
+}
+
+#image {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.shadowbox{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.801), rgba(5, 12, 31, 0.603));
+}
+.empty-box{
+    height: 100px;
+    width: 100%;
+    border-top: 4px solid red;
+    border-radius: 50% 50% 0% 0%;
+    background: linear-gradient(to bottom,rgb(29, 15, 78) ,rgb(0, 0, 0));
+
+}
+
+
+.second-main{
+    margin: 0px 500px;
+    
+}
+
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px;
+}
+
+.trending h1{
+    color: white;
+}
+
+.reasons-box h1{
+    color: white;
+}
+
+.FAQs h1{
+    color: white;
+}
+
+
+.boxes{
+    display: flex;
+    background-color: black;
+    gap: 20px;
+    height: 320px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --boxes;
+    scroll-snap-type: x mandatory;
+}
+
+.boxes::-webkit-scrollbar{
+    display: none;
+
+}
+
+.boxes::scroll-button(right), .boxes::scroll-button(left){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '→';
+    border: none;
+    background: linear-gradient(to right, rgba(24, 24, 155, 0.801), rgba(170, 34, 34, 0.836));
+    font-size: 1rem;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding-bottom: .1em;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --boxes;
+    position-area: right center;
+    translate: -50%;
+    opacity: 0.8;
+    
+}
+
+.boxes::scroll-button(left){
+    content: '←';
+    position-area: left center;
+    translate: 50%;
+    background: linear-gradient(to right,rgba(170, 34, 34, 0.836), rgba(24, 24, 155, 0.801));
+}
+
+.boxes::scroll-button(right):disabled, .boxes::scroll-button(left):disabled{
+    opacity: 0.3;
+    cursor: auto;
+}
+
+.boxess{
+    display: flex;
+    gap: 20px;
+    height: 300px;
+    position: relative;
+}
+
+.box{
+    flex: 0 0 auto;
+    margin: 30px 0px;
+    scroll-snap-align: start;
+    background-color: rgb(65, 64, 64);
+}
+
+.box img{
+    background-color: black;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+}
+.reasons-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(15, 33, 82) , rgb(49, 11, 49));
+    height: 250px;
+    width: 150px;
+    color: white;
+    height: 280px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+
+}
+
+.b h1{
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.b div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    gap: 100px;
+    color: rgb(146, 151, 155);
+    text-align:left;
+
+    
+}
+
+.icon{
+    margin-top: 90px;
+    margin-left: 140px; 
+    color: rgb(151, 148, 148);
+}
+.icon2{
+    margin-top: 85px;
+    margin-left: 140px;
+    /* color: red; */
+}
+.icon3{
+    margin-top: 110px;
+    margin-left: 140px;
+    /* color: red; */
+}
+.icon4{
+    margin-top: 55px;
+    margin-left: 140px; 
+    /* color: red; */
+}
+
+.FAQs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 65px;
+    
+}
+
+.questions{
+    height: 70px;
+    /* width: 100vw; */
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    font-size: x-large;
+    cursor: pointer;
+    
+}
+
+.plus{
+    margin-right: 20px;
+    font-size: xx-large;
+}
+
+.questions:hover{
+    background-color: rgb(73, 71, 71);
+    
+}
+
+.bottom-email{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+}
+
+.txt{
+    color: white;
+}
+
+footer{
+    margin-top: 30px;
+    color:rgb(107, 106, 106);
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    font-size: small;
+}
+
+.opt{
+    display: flex;
+    gap: 100px;
+}
+
+li{
+    text-decoration: underline;
+    list-style: none;
+    padding: 2px;
+
+}
+
+.en{
+    color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 10px 40px;
+}
+
+.nn{
+    color: rgb(150, 148, 148);
+    text-decoration: none;
+}
+
+.bottom-text{
+    font-size: smaller;
+}
+
+.bottom-text a{
+    color: rgb(67, 69, 216);
+}
+
+.nothing{
+    height: 100px;
+}
+
+/* img:hover{
+    height: 200px;
+    width: 280px;
+} */

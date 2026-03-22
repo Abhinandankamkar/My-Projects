@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<!-- <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+<script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script> -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">MyPortfolio</h1>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="content">
+    <div class="contents">
+        <h1>Hello, I'm <span>Abhinandan</span></h1>
+        <p>Web Developer | Programmer | Student</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web developer who loves building beautiful and
+        functional websites. I enjoy learning new technologies and improving
+        my programming skills every day. And also intrested in logical programming and solving problems.
+    </p>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="skill-bar"><span style="width:90%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="skill-bar"><span style="width:80%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>Python</p>
+        <div class="skill-bar"><span style="width:65%"></span></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="skill-bar"><span style="width:35%"></span></div>
+    </div>
+
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+        <div id="weather" class="project-card">
+            <h3>Weather</h3>
+            <p>Enter country name and know about weather.</p>
+            <a href="http://127.0.0.1:3000/weather.html?serverWindowId=39d0ee6e-8b55-4aa1-8552-badcc0e1be1d" target="_blank">Click here</a>
+        </div>
+        
+        <div id="login-page" class="project-card">
+            <h3>Login Page</h3>
+            <p>A modern login page using HTML and CSS.</p>
+            <a href="http://127.0.0.1:3000/login.html?serverWindowId=39d0ee6e-8b55-4aa1-8552-badcc0e1be1d" target="_blank">Click here</a>
+        </div>
+
+        <div id="spell" class="project-card">
+            <h3>Spelling Checker</h3>
+            <p>I created this using Python with HTML and CSS</p>
+            <p>
+                <a href="http://127.0.0.1:5000/" target="_blank">Click here</a>
+            </p>
+        </div>
+        
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 MyPortfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
